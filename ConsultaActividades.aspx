@@ -41,6 +41,11 @@
         </div>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Parcial1ConnectionString %>" SelectCommand="SELECT [id_actividad], [nombre_actividad], [descripcion], [dias], [horario] FROM [Actividades]"></asp:SqlDataSource>
         <p class="nuevoEstilo2">
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Parcial1ConnectionString %>" SelectCommand="SELECT id_actividad, nombre_actividad, descripcion, dias, horario FROM Actividades WHERE (id_actividad = @id_actividad)">
+                <SelectParameters>
+                    <asp:ControlParameter ControlID="DropDownList1" Name="id_actividad" PropertyName="SelectedValue" />
+                </SelectParameters>
+            </asp:SqlDataSource>
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AltaClientes.aspx">Pantalla Principal</asp:HyperLink>
         </p>
     </form>

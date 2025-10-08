@@ -23,7 +23,7 @@
         <div>
             <h1 class="auto-style1"><span class="nuevoEstilo2">Consulta de Planes </span> </h1>
             <p class="auto-style1">
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="#CCCCFF" DataKeyNames="id_plan" DataSourceID="SqlDataSource1" Height="224px" Width="475px">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="#CCCCFF" DataKeyNames="id_plan" DataSourceID="SqlDataSource1" Height="224px" Width="811px">
                     <Columns>
                         <asp:BoundField DataField="descripcion" HeaderText="descripcion" SortExpression="descripcion" />
                         <asp:BoundField DataField="nombre_plan" HeaderText="nombre_plan" SortExpression="nombre_plan" />
